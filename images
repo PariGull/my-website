@@ -1,0 +1,7 @@
+<img src="images/your-profile-picture.jpg" alt="Your Name">
+<img src="images/about-math.jpg" alt="Mathematics">
+<div class="gallery">
+    <img src="images/math1.jpg" alt="Mathematical Image 1">
+    <img src="images/math2.jpg" alt="Mathematical Image 2">
+    <img src="images/math3.jpg" alt="Mathematical Image 3">
+</div>
