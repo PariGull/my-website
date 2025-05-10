@@ -1,28 +1,186 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #f7f7f7, #e0e0e0);
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: #2c3e50;
+    color: #ecf0f1;
     padding: 1rem 0;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+header nav {
+    margin-top: 0.5rem;
 }
 
 header nav a {
-    color: #fff;
+    color: #ecf0f1;
     margin: 0 1rem;
     text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
 header nav a:hover {
+    color: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero .highlight {
+    color: #f39c12;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Hero section profile picture */
+.hero img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    margin-top: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    content: url('images/profile-picture.jpg'); /* Replace with your profile picture */
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #f39c12;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.hero .btn:hover {
+    background: #d35400;
+    transform: scale(1.05);
+}
+
+/* About Section */
+.about {
+    background: #ecf0f1;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* About section image */
+.about img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin: 1rem auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    content: url('images/about-math.jpg'); /* Replace with a mathematics-related image */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #2c3e50;
+    color: #ecf0f1;
+    font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #f39c12;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
     text-decoration: underline;
 }
 
-main {
-    padding: 1rem;
-    text-align: center;
+/* Gallery Section for Mathematical Images */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+    background: #f7f7f7;
+}
+
+/* Gallery images */
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:nth-child(1) {
+    content: url('images/math1.jpg'); /* Replace with your first math-related image */
+}
+
+.gallery img:nth-child(2) {
+    content: url('images/math2.jpg'); /* Replace with your second math-related image */
+}
+
+.gallery img:nth-child(3) {
+    content: url('images/math3.jpg'); /* Replace with your third math-related image */
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
