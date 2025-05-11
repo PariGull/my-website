@@ -3,28 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Pari Gull </title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.3em;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #2575fc;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: white;
+            background: #2575fc;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .links a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 0.9em;
+            color: #888;
+        }
+
+        footer a {
+            color: #2575fc;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio!</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <h1>Pari Gull</h1>
+        <p>Mathematics Enthusiast | Problem Solver | Lifelong Learner</p>
     </header>
-    <main>
-        <section class="hero">
-            <h2>Hello, I'm <span class="highlight">[Pari Gull]</span></h2>
-            <p>Welcome to my website! Here you can find more about me and my work.</p>
-            <a href="about.html" class="btn">Learn More</a>
+
+    <div class="container">
+        <section id="intro">
+            <h2>About Me</h2>
+            <p>
+                Hi! I'm Pari Gull, a mathematics student passionate about the beauty and power of numbers. 
+                I enjoy solving complex problems, exploring mathematical concepts, and applying them to real-world challenges.
+            </p>
+            <p>
+                 Feel free to explore and connect with me!
+            </p>
         </section>
-    </main>
+
+        <div class="links">
+            <a href="about.html">About Me</a>
+            <a href="contact.html">Contact Me</a>
+        </div>
+    </div>
+
     <footer>
-        <p>&copy; 2025 [Pari Gull]. All Rights Reserved.</p>
+        <p>© 2025 Pari Gull. Built with ❤️ and a passion for mathematics.</p>
     </footer>
 </body>
 </html>
