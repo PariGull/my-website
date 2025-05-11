@@ -3,22 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Who am I?</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #2575fc;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin: 10px 0 20px;
+        }
+
+        /* Skills Section */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill {
+            background: #f4f7fc;
+            border: 1px solid #e0e0e0;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skill:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .skill h3 {
+            color: #2575fc;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .skill p {
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 0.9em;
+            color: #888;
+        }
+
+        footer a {
+            color: #2575fc;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>About Me</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <p>Welcome to my portfolio. </p>
     </header>
-    <main>
-        <h2>Who Am I?</h2>
-        <p>I'm an undergraduate mathematics student with a passion for problem-solving, abstract thinking, and programming. I enjoy exploring patterns, building models, and applying math to real-world challenges. Skilled in Python, OOP, advanced Excel, and Maple, I’m eager to grow through projects that blend mathematics with technology and innovation.
-</p>
-    </main>
+
+    <div class="container">
+        <!-- Description Section -->
+        <section id="description">
+            <h2>Who Am I?</h2>
+            <p>
+                Hi there! My name is <strong>[Pari Gull]</strong>, and I am a mathematics enthusiast with a passion for unraveling the mysteries of numbers and patterns. 
+                Mathematics is more than just a subject for me—it's a way to perceive and understand the world around us.
+            </p>
+            <p>
+                From solving challenging equations to applying mathematical models in real-world scenarios, my journey in mathematics is fueled by curiosity and a drive to make an impact. 
+                I enjoy collaborating with peers on academic projects, conducting research, and teaching others to appreciate the elegance of math.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">
+                    <h3>Advanced Calculus</h3>
+                    <p>Proficient in solving differential equations, integrals, and multivariable calculus problems.</p>
+                </div>
+                <div class="skill">
+                    <h3>Linear Algebra</h3>
+                    <p>Expertise in matrix computations, vector spaces, and eigenvalues/eigenvectors.</p>
+                </div>
+                <div class="skill">
+                    <h3>Data Analysis</h3>
+                    <p>Skilled in statistical methods, data visualization, and analysis using tools like Python and Excel.</p>
+                </div>
+                <div class="skill">
+                    <h3>Mathematical Modeling</h3>
+                    <p>Experienced in creating models to simulate real-world systems and solve practical problems.</p>
+                </div>
+                <div class="skill">
+                    <h3>Programming</h3>
+                    <p>Knowledge of Python, Html, CSS</p>
+                </div>
+                <div class="skill">
+                    <h3>Research & Writing</h3>
+                    <p>Strong academic writing skills, capable of presenting findings clearly and concisely.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    
 </body>
 </html>
